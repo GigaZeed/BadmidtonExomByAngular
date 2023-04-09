@@ -8,6 +8,7 @@ export class Products{
   name!:String;
   price!:String;
   descript!:String;
+  pic!:String;
 }
 
 @Injectable({
