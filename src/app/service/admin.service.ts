@@ -39,7 +39,7 @@ export class AdminService {
 
 
   //Get single Product
-  GetBook(id: any):Observable<any>{
+  GetProduct(id: any):Observable<any>{
     let API_URL = `${this.REST_API}/detail-product/${id}`;
     return this.httpClient.get(API_URL,{headers:this.httpHeaders})
     .pipe(map((res:any)=>{
