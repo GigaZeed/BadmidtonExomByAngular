@@ -3,3 +3,9 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+.h1{
+    font-family: "JetBrains Mono",monospace;
+    text-align: center;
+    text-shadow: 2px 2px #D6D6E7;
+    margin-bottom: 25px;
+}

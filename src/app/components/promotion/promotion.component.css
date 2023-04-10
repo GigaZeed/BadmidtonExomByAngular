@@ -8,6 +8,7 @@ div.newpd {
     color: rgb(87, 86, 86);
     padding-bottom: 0px;
     padding-top: 40px;
+    text-shadow: 2px 2px #D6D6E7;
   }
   .newpd:before,
   .newpd:after{

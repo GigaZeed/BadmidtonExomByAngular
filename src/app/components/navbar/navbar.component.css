@@ -1,0 +1,27 @@
+.text-shadow {
+    text-shadow: 2px 2px #D6D6E7;
+}
+.linkbutton{
+    background-color:#f8f9fa;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+}
+.linkbutton:hover, .linkbutton:active {
+    background-color:#e7e7e7;
+  }
+.linkbtbg{
+    background-color:#212529;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+}
+.linkbtbg:hover, .linkbtbg:active {
+    background-color:#000000;
+  }

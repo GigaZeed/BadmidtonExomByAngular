@@ -118,6 +118,7 @@ input:focus ~ .highlight {
     margin-bottom: 20px;
     border: 1px solid black;
     padding-left: 15px;
+    box-shadow: 3px 3px  #D6D6E7;
 }
 .form-button{
     height: 35px;
@@ -127,6 +128,7 @@ input:focus ~ .highlight {
 }
 .h1{
     font-family: "JetBrains Mono",monospace;
+    text-shadow: 2px 2px #D6D6E7;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
