@@ -1,0 +1,21 @@
+div.newpd {
+    font-weight:400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:25px;
+    text-align: center;
+    line-height:50px;
+    padding: 20px;
+    color: rgb(87, 86, 86);
+    padding-bottom: 0px;
+    padding-top: 40px;
+  }
+  .newpd:before,
+  .newpd:after{
+    background-color: rgb(204, 199, 199);
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+  }

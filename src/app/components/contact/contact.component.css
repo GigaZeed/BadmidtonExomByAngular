@@ -131,6 +131,10 @@ input:focus ~ .highlight {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+.p{
+  text-align: center;
+    margin-bottom: 25px;
+}
 /* CSS */
 .button-30 {
   align-items: center;
