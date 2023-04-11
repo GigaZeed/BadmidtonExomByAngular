@@ -15,11 +15,11 @@ const routes: Routes = [
   {path:'addnew',component:AddComponent},
   {path:'edit',component:DetailsComponent},
   {path:'list',component:ListsComponent},
-  {path: 'about',component:AboutComponent},
-  {path: 'contact',component:ContactComponent},
-  {path: 'home',component:HomeComponent},
-  {path: 'login',component:LoginComponent},
-  {path: 'register',component:RegisterComponent}
+  {path:'about',component:AboutComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'home',component:HomeComponent},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent}
 ];
 
 @NgModule({
