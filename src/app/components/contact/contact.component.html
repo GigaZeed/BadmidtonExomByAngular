@@ -1,0 +1,47 @@
+<div class="container">
+    <h1 class="h1"> Contact Us </h1>
+    <p class="p">We will get back to you as soon as we can ! <br>
+        For urgent case please contact our Call center team + 01 234 567 89</p>
+    <table class="common-form">
+        <tr class="group"> <input 
+            type="text" required
+            class="form-input"
+            name = "name"
+            >
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+        </tr>
+        <tr class="group"> <input 
+            type="email" required
+            class="form-input"
+            name = "password"
+            >
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+        </tr>
+        <tr class="group"> <input 
+            type="tel" required
+            class="form-input"
+            name = "phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            maxlength="10"
+            required
+            >
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="phone">Moblie Number</label>
+        </tr>
+        <tr class="group"> 
+            <textarea id="subject" 
+            name="subject" 
+            placeholder="We'd Love To Hear From You" 
+            style="height:100px ; width: 300px;"
+            class="form-input"></textarea>
+        </tr>
+        <tr>
+            <button class="form-button button-30">Send</button>
+        </tr>
+    </table>
+</div>
