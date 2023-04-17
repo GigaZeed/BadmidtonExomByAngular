@@ -1,0 +1,32 @@
+.setbtn{
+    background-color: rgb(129, 129, 129);
+    width: 90px;
+    margin: 10px 0px 0px 20px;
+    transition: box-shadow 0.2s ease-in-out; 
+}
+.setbtn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+
+.input-setting{
+    width: 150px;
+}
+
+.btncreate{
+    background-color: rgb(233, 233, 233);
+    transition: box-shadow 0.2s ease-in-out; 
+}
+.btncreate:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+
+  tr.spaceUnder>td {
+    padding-bottom: 15em;
+  }
+
+.pricesty{
+    font-size: 22px;
+    color: rgb(228, 4, 4);
+    font-weight: bold;
+}
+  

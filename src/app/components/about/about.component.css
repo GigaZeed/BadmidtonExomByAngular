@@ -23,3 +23,10 @@ img{
     margin-top: 5px;
     object-fit: cover;
 }
+
+.shorttext {
+    white-space: nowrap;         
+    overflow: hidden;          
+    text-overflow: ellipsis; 
+    text-decoration: none; 
+  }
