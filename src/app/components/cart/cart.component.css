@@ -28,3 +28,43 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
+.showshadow{
+    transition: box-shadow 0.2s ease-in-out; 
+}
+.showshadow:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+
+.inputset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 174px;
+    margin-top: 3px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+.inputset:focus {
+    outline: none;
+    border-color: #2f80ed;
+  }
+
+.totalred{
+    white-space: nowrap;
+    color: red;
+    text-align: center;
+}
+.btnunder{
+    width: 105px;
+    margin-top: 10px;
+}
+.h5{
+    font-family: "JetBrains Mono",monospace;
+    text-align: left;
+    text-shadow: 2px 2px #D6D6E7;
+    font-size: 50px;
+}
+.po{
+    padding-left: -100px;
+}

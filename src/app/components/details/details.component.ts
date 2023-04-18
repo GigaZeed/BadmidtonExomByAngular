@@ -24,29 +24,10 @@ export class DetailsComponent {
       this.dataproduct = data
       console.log(this.dataproduct)
     })
-
-    // if(Array.isArray([this.dataproduct])){
-    //   this.dataproduct.forEach((a:any)=>{
-    //     Object.assign(a,{quantity:1,total:a.price});
-    //   })
-    // }    
   }
 
   addtoCart(dataproduct: Products) {
     Object.assign(dataproduct, { quantity: 1, total: dataproduct.price });
     this.cartService.addtoCart(dataproduct);
   }
-  
-  
-
-  value: number = 1
-  plus() {
-    this.value++
-  }
-  minus() {
-    if(this.value > 0){
-      this.value--
-    }
-  }
- 
 }

@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 class="h1"> Add New Product </h1>
+    <h1 class="h1"> Delivery Address </h1>
     <table class="common-form">
         <tr class="group"> <input 
             type="text" required
@@ -8,37 +8,36 @@
             >
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Product Name</label>
+            <label>Recipient Name</label>
         </tr>
         <tr class="group"> <input 
-            type="text" required
+            type="email" required
             class="form-input"
-            name = "detail"
+            name = "email"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Product Detail</label>
+            <label>Recipient Email</label>
         </tr>
         <tr class="group"> <input 
-            type="text" required
+            type="tel" required
             class="form-input"
-            name = "price"
+            name = "phone"
+            maxlength="10"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Product Price</label>
+            <label for="phone">Recipient Moblie Number</label>
         </tr>
-        <tr class="group"> <input 
-            type="text" required
-            class="form-input"
-            name = "detail"
-            >
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Product Image URL</label>
+        <tr class="group"> 
+            <textarea id="subject" 
+            name="subject" 
+            placeholder="Enter your address..." 
+            style="height:100px ; width: 300px;"
+            class="form-input"></textarea>
         </tr>
         <tr>
-            <button class="form-button button-30">Add Product</button>
+            <button class="form-button button-30">Confirm</button>
         </tr>
     </table>
 </div>

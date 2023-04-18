@@ -29,4 +29,10 @@
     color: rgb(228, 4, 4);
     font-weight: bold;
 }
+.showshadow{
+  transition: box-shadow 0.2s ease-in-out; 
+}
+.showshadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
   

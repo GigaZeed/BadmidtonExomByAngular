@@ -22,7 +22,7 @@ export class CartComponent {
       this.grandTotal = this.cartService.getTotalPrice();
     })
     console.log(this.cartService.get());
-    
+
   }
 
   removeItem(dtpd : any){
@@ -31,4 +31,22 @@ export class CartComponent {
   emptycart(){
     this.cartService.removeAllCart();
   }
+  
+  incrementQuantity(product: any) {
+    product.quantity += 1;
+    product.total = product.price * product.quantity;
+    this.cartService.productList.next(this.products);
+    this.grandTotal = this.cartService.getTotalPrice();
+  }
+
+  decrementQuantity(product: any) {
+    if (product.quantity <= 1) {
+      return;
+    }
+    product.quantity -= 1;
+    product.total = product.price * product.quantity;
+    this.cartService.productList.next(this.products);
+    this.grandTotal = this.cartService.getTotalPrice();
+  }
+
 }
