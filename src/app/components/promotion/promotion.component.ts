@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AdminService } from '../../service/admin.service';
+import { Products } from '../../../assets/doubles/ProductStructure';
 
 @Component({
   selector: 'app-promotion',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class PromotionComponent {
 
+  dataproduct:Products[] = [];
+
+  constructor(private datanew : AdminService){}
+
+  ngOnInit(){
+    this.datanew.GetProducts().subscribe((data)=>{
+      // this.dataproduct = data
+      console.log(this.dataproduct = data)
+    })
+  }
 }
