@@ -22,49 +22,23 @@
       </div>
 </div>
 <div class="newpd"> New Products </div>
-<div class="row d-flex p-5">
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <img src="https://image.useinsider.com/supersports/defaultImageLibrary/030423_CROCS_OFF%20COURT%20CLOG_NEW%20ARRIVAL%20BANNER_490x590-1680838239.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">New Product : </h5>
-              <p class="card-text">New product, buy it before it's gone because it's very good.</p>
-              <a href="#" class="btn btn-primary">
-                <img src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"/></a>
-            </div>
+<div class="row d-flex">
+  <div class="container-fluid my-4">
+    <div class="row">
+      <ng-container *ngFor="let dtpd of dataproduct; let i = index">
+        <div class="col-3" *ngIf="i < 4">
+          <div class="card">
+            <div style="height: 300px;">
+              <img [src]="dtpd.pic" class="card-img-top" alt="product">
+            </div>  
+              <div class="card-body">
+                <h5 class="card-title shorttext">{{dtpd.name}}</h5>
+                <p class="card-text"><strong>{{dtpd.price}}฿</strong></p>
+                <a [href]="'/detail/'+ dtpd.id" class="btn "> NEW </a>
+              </div>
           </div>
+        </div>
+      </ng-container>
     </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <img src="https://image.useinsider.com/supersports/defaultImageLibrary/030423_CROCS_OFF%20COURT%20CLOG_NEW%20ARRIVAL%20BANNER_490x590-1680838239.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">New Product : </h5>
-              <p class="card-text">New product, buy it before it's gone because it's very good.</p>
-              <a href="#" class="btn btn-primary">
-                <img src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"/></a>
-            </div>
-          </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <img src="https://image.useinsider.com/supersports/defaultImageLibrary/030423_CROCS_OFF%20COURT%20CLOG_NEW%20ARRIVAL%20BANNER_490x590-1680838239.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">New Product : </h5>
-              <p class="card-text">New product, buy it before it's gone because it's very good.</p>
-              <a href="#" class="btn btn-primary">
-                <img src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"/></a>
-            </div>
-          </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <img src="https://image.useinsider.com/supersports/defaultImageLibrary/030423_CROCS_OFF%20COURT%20CLOG_NEW%20ARRIVAL%20BANNER_490x590-1680838239.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">New Product : </h5>
-              <p class="card-text">New product, buy it before it's gone because it's very good.</p>
-              <a href="#" class="btn btn-primary">
-                <img src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"/></a>
-            </div>
-          </div>
-    </div>
+  </div>
 </div>

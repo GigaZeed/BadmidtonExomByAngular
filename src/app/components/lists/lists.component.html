@@ -1,13 +1,19 @@
-<div>
-    <div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://static-ssp.supersports.co.th/media/catalog/product/s/s/SSP52045202_1.jpg?impolicy=resize&width=553" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Product : </h5>
-              <p class="card-text">Product, buy it before it's gone because it's very good.</p>
-              <a href="#" class="btn btn-primary">
-                <img src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"/></a>
+<div class="container-fluid my-4">
+  <div class="row">
+      <div class="col-3" *ngFor="let dtpd of dataproduct">
+          <div class="card showdetail">
+            <div style="height: 300px;">
+              <a [routerLink]="'/detail/'+ dtpd.id" class="setlink">
+                <img [src]="dtpd.pic" class="card-img-top" alt="product">
+              </a>
+            </div>  
+              <div class="card-body">
+                <a [routerLink]="'/detail/'+ dtpd.id" class="setlink">
+                <h5 class="card-title shorttext">{{dtpd.name}}</h5>
+                <p class="card-text"><strong>{{dtpd.price}}฿</strong></p></a>
+                <button (click)="addtoCart(dtpd)" class="btn btn-primary"><img src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"/></button>
+              </div>
             </div>
-          </div>
-    </div>
+      </div>
+  </div>
 </div>
