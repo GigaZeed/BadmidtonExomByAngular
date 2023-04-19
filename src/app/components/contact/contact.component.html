@@ -7,6 +7,7 @@
             type="text" required
             class="form-input"
             name = "name"
+            [(ngModel)] = "name"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
@@ -15,7 +16,8 @@
         <tr class="group"> <input 
             type="email" required
             class="form-input"
-            name = "password"
+            name = "email"
+            [(ngModel)] = "email"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
@@ -26,6 +28,7 @@
             class="form-input"
             name = "phone"
             maxlength="10"
+            [(ngModel)] = "phone"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
@@ -36,10 +39,12 @@
             name="subject" 
             placeholder="We'd Love To Hear From You" 
             style="height:100px ; width: 300px;"
-            class="form-input"></textarea>
+            class="form-input"
+            [(ngModel)] = "message"
+            ></textarea>
         </tr>
         <tr>
-            <button class="form-button button-30">Send</button>
+            <button class="form-button button-30" (click)="send()">Send</button>
         </tr>
     </table>
 </div>

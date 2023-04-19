@@ -73,4 +73,11 @@ export class AdminService {
     console.log(errorMessage)
     return throwError(errorMessage);
   }
+
+  createNewContact(newContact:object):Observable<any>{
+    console.log(newContact);
+    const headers = {'contact-type':'application/json'}
+    return this.httpClient.post<any>(this.REST_API + '/addcontact',{...newContact},{headers:headers});
+  }
+
 }
