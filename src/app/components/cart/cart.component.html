@@ -8,7 +8,7 @@
                             <th>No.</th>
                             <th>Name</th>
                             <th>Image</th>
-                            <th>Discription</th>
+                            <th>Description</th>
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Total</th>
@@ -46,8 +46,7 @@
                             <td><input style="width: 100%;" class="inputset" type="tel" maxlength="16" id="card-number" name="card-number" placeholder="Card Number">
                                 <input style="width: 100%;" class="inputset" type="date"id="date" name="date" placeholder="Card Number"></td>
                             <td><input style="width: 25%;" class="inputset" type="tel" maxlength="3" id="cvv" name="cvv" placeholder="CVV"></td>
-                            <td class="ps-3"><button class="btn btn-success showshadow btnunder" 
-                                onclick="alert('Successful purchase, please wait for the products to be sent to you.')">
+                            <td class="ps-3"><button class="btn btn-success showshadow btnunder" (click)="payclick()">
                                 Pay</button></td>
                             <td><button routerLink="/list" class="btn btn-primary showshadow btnunder">Shop More</button></td>
                             <td><button (click)="emptycart()" class="btn btn-danger showshadow btnunder">Clear Cart</button></td>

@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  
   name:string = "";
   email:string = "";
   phone:string = "";

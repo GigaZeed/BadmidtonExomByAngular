@@ -16,7 +16,7 @@ export class ListsComponent {
 
   ngOnInit(){
     this.datanew.GetProducts().subscribe((data)=>{
-      console.log(this.dataproduct = data) 
+      this.dataproduct = data
 
       
 

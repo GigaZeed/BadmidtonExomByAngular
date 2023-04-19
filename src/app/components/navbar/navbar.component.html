@@ -41,11 +41,12 @@
             <form class="d-flex">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active bi bi-indent linkbtbg" aria-current="page" routerLink="/login">Login</a>  
+                  <a *ngIf="_api.isLogin()" class="nav-link active bi bi-indent linkbtbg" aria-current="page" (click)="_api.logout()">Logout</a>  
+                  <a *ngIf="!_api.isLogin()" class="nav-link active bi bi-indent linkbtbg" aria-current="page" routerLink="/login">Login</a>  
                 </li>
-                <li class="nav-link active"> | </li>
+                <li *ngIf="!_api.isLogin()" class="nav-link active"> | </li>
                 <li class="nav-item">
-                  <a class="nav-link active linkbtbg" aria-current="page" routerLink="/register">Register</a>
+                  <a *ngIf="!_api.isLogin()" class="nav-link active linkbtbg" aria-current="page" routerLink="/register">Register</a>
                 </li>  
               </ul>
             </form>

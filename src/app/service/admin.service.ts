@@ -3,6 +3,7 @@ import { catchError, map} from 'rxjs/operators'
 import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders,HttpErrorResponse } from '@angular/common/http';
 import { Products } from '../../assets/doubles/ProductStructure';
+import {CartObj} from '../../assets/doubles/CartStructure';
 
 @Injectable({
   providedIn: 'root'
@@ -80,4 +81,9 @@ export class AdminService {
     return this.httpClient.post<any>(this.REST_API + '/addcontact',{...newContact},{headers:headers});
   }
 
+  createCart(newCart:object):Observable<CartObj>{
+    console.log(newCart);
+    const headers = {'contact-type':'application/json'}
+    return this.httpClient.post<CartObj>(this.REST_API + '/addcart',{...newCart},{headers:headers});
+  }
 }
