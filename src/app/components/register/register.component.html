@@ -6,6 +6,7 @@
             type="text" required
             class="form-input"
             name = "name"
+            [(ngModel)]="username"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
@@ -15,6 +16,7 @@
             type="password" required
             class="form-input"
             name = "password"
+            [(ngModel)]="password"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
@@ -33,13 +35,14 @@
             type="text" required
             class="form-input"
             name = "email"
+            [(ngModel)]="email"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Email</label>
         </tr>
         <tr>
-            <button class="form-button button-30">Comfirm</button>
+            <button class="form-button button-30" (click)="register()">Comfirm</button>
         </tr>
     </table>
 </div>

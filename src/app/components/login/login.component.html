@@ -5,23 +5,25 @@
         <tr class="group"> <input 
             type="text" required
             class="form-input"
-            name = "email"
+            name = "username"
+            [(ngModel)]="username"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Email</label>
+            <label>Username</label>
         </tr>
         <tr class="group"> <input 
             type="password" required
             class="form-input"
             name = "password"
+            [(ngModel)]="password"
             >
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Password</label>
         </tr>
         <tr>
-            <button class="form-button button-30">Log in</button>
+            <button class="form-button button-30" (click)="login()">Log in</button>
         </tr>
     </table>
 </div>
